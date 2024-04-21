@@ -15,4 +15,12 @@ model accounts {
   role      String   @db.VarChar(8)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  notes     notes[]
+}
+
+model notes {
+  id      Int      @id @default(autoincrement())
+  user    accounts @relation(fields: [user_id], references: [user_id])
+  user_id Int
+  content String   @db.VarChar(256)
 }
