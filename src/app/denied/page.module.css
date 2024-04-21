@@ -1,0 +1,9 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 5rem;
+}
+
+.warning {
+  color: #ff5555;
+}

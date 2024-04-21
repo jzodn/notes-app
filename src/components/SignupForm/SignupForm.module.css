@@ -1,0 +1,10 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    width: 200px;
+}
+
+.error {
+    color: rgb(237, 92, 92);
+}

@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  background-color: gray;
+  /* position: fixed; */
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+}
