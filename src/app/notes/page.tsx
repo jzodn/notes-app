@@ -20,7 +20,7 @@ export default async function Notes() {
           <h2>Here are your notes</h2>
           <div className={classes.notesArea}>
             {notes?.map((note) => {
-              return <Note content={note.content} />
+              return <Note key={note.id} id={note.id} content={note.content} />
             })}
           </div>
         </div>

@@ -40,6 +40,7 @@ export default function CreateNoteForm() {
 
     if (res.ok) {
       console.log("Note created");
+      router.refresh();
     } else {
       console.log("Could not create note");
     }
