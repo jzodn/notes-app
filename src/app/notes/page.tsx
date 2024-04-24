@@ -16,24 +16,26 @@ export default async function Notes() {
     return (
       <div className={classes.wrapper}>
         <h1 className={classes.header}>Welcome {session?.user.username}</h1>
-        <div className={classes.notes}>
-          <h2>Here are your notes</h2>
-          <div className={classes.notesArea}>
-            {notes?.map((note) => {
-              return <Note key={note.id} id={note.id} content={note.content} />
-            })}
+        <div className={classes.notesWrapper}>
+          <div className={classes.notes}>
+            <h2>Here are your notes</h2>
+            <div className={classes.notesArea}>
+              {notes?.map((note) => {
+                return <Note key={note.id} id={note.id} content={note.content} />
+              })}
+            </div>
           </div>
-        </div>
-        <div className={classes.createNote}>
-          <h2>Create a note</h2>
-          <CreateNoteForm />
+          <div className={classes.createNote}>
+            <h2>Create a note</h2>
+            <CreateNoteForm />
+          </div>
         </div>
       </div>
     )
   }
 
   return (
-    <div>
+    <div className={classes.wrapper}>
       <h1>Please login to see your notes</h1>
       <Link href="/login">Login here</Link>
     </div>
