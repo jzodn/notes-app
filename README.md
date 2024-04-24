@@ -1,7 +1,7 @@
 # Notes Web App
 
 ## About The Project
-This web application allows users to create an account and manage their personal notes. Built with TypeScript and Next.js, it leverages PostgreSQL and Prisma for database management, and utilizes NextAuth for secure user authentication.
+This web application allows users to create an account and manage their personal notes. Built with TypeScript and Next.js, it leverages PostgreSQL and Prisma for database management, and utilises NextAuth for secure user authentication.
 
 ### Built With
 - **[Next.js](https://nextjs.org/)** - The React framework for production.
